@@ -1,9 +1,9 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "cn.chenghao.tools.myapplication"
+//        applicationId "cn.chenghao.tools.myapplication"
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
