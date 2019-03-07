@@ -131,7 +131,8 @@
    -keep public class android.support.design.R$* { *; }
 
    #11.确保JavaBean不被混淆-否则Gson将无法将数据解析成具体对象
-    -keep class httploglib.lib.been..** { *; }
+    -keep class httploglib.lib.been.** { *; }
+     -keep lib.data.** { *; }
 
     #12.不混淆资源类
      -keepclassmembers class **.R$* {
@@ -144,6 +145,15 @@
  #14 webview确保openFileChooser方法不被混淆
  -keepclassmembers class * extends com.tencent.smtt.sdk.WebChromeClient{
   public void openFileChooser(...);
+  }
+
+  # 保留自定义控件(继承自View)不能被混淆
+  -keep public class * extends android.view.View {
+      public <init>(android.content.Context);
+      public <init>(android.content.Context, android.util.AttributeSet);
+      public <init>(android.content.Context, android.util.AttributeSet, int);
+      public void set*(***);
+      *** get* ();
   }
 
 
