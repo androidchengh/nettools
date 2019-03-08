@@ -372,6 +372,8 @@
 
    -keep class httploglib.lib.crash.CrashHandler.** { *; }
    -keep class lib.carsh.CarshNavigatorContent.** { *; }
+   -keep class lib.http.ChuckInterceptor.** { *; }
+   -keep class lib.net.HttpNavigatorContent.** { *; }
 
 
 
