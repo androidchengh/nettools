@@ -134,6 +134,9 @@
     -keep class httploglib.lib.been.** { *; }
      -keep lib.data.** { *; }
      -keep lib.http.** { *; }
+     -keep lib.net.** { *; }
+     -keep lib.support.** { *; }
+     -keep lib.theming.** { *; }
 
     #12.不混淆资源类
      -keepclassmembers class **.R$* {
