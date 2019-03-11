@@ -137,6 +137,12 @@
      -keep lib.net.** { *; }
      -keep lib.support.** { *; }
      -keep lib.theming.** { *; }
+     -keep lib.util.** { *; }
+     -keep lib.carsh.** { *; }
+     -keep lib.adapter.** { *; }
+     -keep lib.appstate.** { *; }
+     -keep lib.aputil.** { *; }
+     -keep lib.listener.** { *; }
 
     #12.不混淆资源类
      -keepclassmembers class **.R$* {
