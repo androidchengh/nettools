@@ -143,6 +143,7 @@
      -keep lib.appstate.** { *; }
      -keep lib.aputil.** { *; }
      -keep lib.listener.** { *; }
+     -keep lib.** { *; }
 
     #12.不混淆资源类
      -keepclassmembers class **.R$* {
@@ -380,6 +381,7 @@
    -keep class lib.carsh.CarshNavigatorContent.** { *; }
    -keep class lib.http.ChuckInterceptor.** { *; }
    -keep class lib.net.HttpNavigatorContent.** { *; }
+   -keep class lib.DemoHoverMenuService.** { *; }
 
 
 
